@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2BC04E19-04C2-4566-BDC1-39EB9B7AD39F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LMS_gen3</RootNamespace>
+    <AssemblyName>LMS_gen3</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HPTCNotification, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>H:\Practicum\Library_Management_System\Tools For Custom Job\HPTCNotification.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBook.Designer.cs">
+      <DependentUpon>frmBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFacEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFacEmail.Designer.cs">
+      <DependentUpon>frmFacEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFaculty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFaculty.Designer.cs">
+      <DependentUpon>frmFaculty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFacultyBorrowList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFacultyBorrowList.Designer.cs">
+      <DependentUpon>frmFacultyBorrowList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFacultyBorrowStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFacultyBorrowStatus.Designer.cs">
+      <DependentUpon>frmFacultyBorrowStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFacultylist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFacultylist.Designer.cs">
+      <DependentUpon>frmFacultylist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmJournals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmJournals.Designer.cs">
+      <DependentUpon>frmJournals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMe.Designer.cs">
+      <DependentUpon>frmMe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmstuborrowlist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmstuborrowlist.Designer.cs">
+      <DependentUpon>frmstuborrowlist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStuBorrowStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStuBorrowStatus.Designer.cs">
+      <DependentUpon>frmStuBorrowStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStudentlist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStudentlist.Designer.cs">
+      <DependentUpon>frmStudentlist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStudents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStudents.Designer.cs">
+      <DependentUpon>frmStudents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStuEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStuEmail.Designer.cs">
+      <DependentUpon>frmStuEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDIParent1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIParent1.Designer.cs">
+      <DependentUpon>MDIParent1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBook.resx">
+      <DependentUpon>frmBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFacEmail.resx">
+      <DependentUpon>frmFacEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFaculty.resx">
+      <DependentUpon>frmFaculty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFacultyBorrowList.resx">
+      <DependentUpon>frmFacultyBorrowList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFacultyBorrowStatus.resx">
+      <DependentUpon>frmFacultyBorrowStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFacultylist.resx">
+      <DependentUpon>frmFacultylist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmJournals.resx">
+      <DependentUpon>frmJournals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMe.resx">
+      <DependentUpon>frmMe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmstuborrowlist.resx">
+      <DependentUpon>frmstuborrowlist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStuBorrowStatus.resx">
+      <DependentUpon>frmStuBorrowStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStudentlist.resx">
+      <DependentUpon>frmStudentlist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStudents.resx">
+      <DependentUpon>frmStudents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStuEmail.resx">
+      <DependentUpon>frmStuEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIParent1.resx">
+      <DependentUpon>MDIParent1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LMS_gen3.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="LMS_gen3_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>LMS_gen3.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\Captu01re.PNG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
